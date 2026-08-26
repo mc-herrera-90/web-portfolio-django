@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% block title %}Home | @mcherrera{% endblock  %}
+{% block content %}
+
+<main>
+  <!-- Hero -->
+  <section class="container">
+    <div class="min-vh-100 d-flex align-items-center">
+      <div class="row w-100">
+        <div class="col-lg-8 col-xl-7">
+
+          <p class="text-primary fw-semibold mb-3">
+            @mcherrera
+          </p>
+
+          <h1 class="display-2 fw-bold lh-1 mb-4">
+            Hola, soy<br>
+            <span class="text-primary">Marco Contreras.</span>
+          </h1>
+
+          <p class="fs-4 text-body-secondary lh-base mb-5"
+             style="max-width: 650px;">
+            Este es mi espacio en la web donde comparto mis proyectos,
+            ideas y trabajo.
+          </p>
+
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="{% url 'web_portfolio' %}" class="btn btn-primary btn-lg px-4">
+              Ver portafolio
+            </a>
+
+            <a href="/contacto" class="btn btn-outline-secondary btn-lg px-4">
+              Contacto
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Intro -->
+  <section class="border-top">
+    <div class="container py-5">
+      <div class="row py-lg-5">
+        <div class="col-lg-7">
+
+          <p class="text-body-secondary text-uppercase small fw-semibold mb-3">
+            mcherrera.dev
+          </p>
+
+          <h2 class="display-6 fw-bold mb-4">
+            Un poco sobre este espacio.
+          </h2>
+
+          <p class="lead text-body-secondary mb-0">
+            Un lugar para mostrar lo que hago, los proyectos que he creado
+            y las cosas que voy aprendiendo por el camino.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Links -->
+  <section class="container py-5">
+    <div class="row g-4">
+
+      <div class="col-md-6">
+        <a href="/portafolio"
+           class="text-decoration-none text-body">
+
+          <div class="p-4 p-lg-5 border rounded-4 h-100
+                      d-flex justify-content-between align-items-end
+                      bg-body-tertiary">
+
+            <div>
+              <small class="text-body-secondary">01</small>
+              <h3 class="fw-bold mt-3 mb-2">
+                Portafolio
+              </h3>
+              <p class="text-body-secondary mb-0">
+                Proyectos y trabajos.
+              </p>
+            </div>
+
+            <span class="fs-3">→</span>
+
+          </div>
+        </a>
+      </div>
+
+
+      <div class="col-md-6">
+        <a href="/contacto"
+           class="text-decoration-none text-body">
+
+          <div class="p-4 p-lg-5 border rounded-4 h-100
+                      d-flex justify-content-between align-items-end">
+
+            <div>
+              <small class="text-body-secondary">02</small>
+              <h3 class="fw-bold mt-3 mb-2">
+                Contacto
+              </h3>
+              <p class="text-body-secondary mb-0">
+                Hablemos.
+              </p>
+            </div>
+
+            <span class="fs-3">→</span>
+
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+{% endblock %}

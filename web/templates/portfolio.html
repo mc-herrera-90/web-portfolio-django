@@ -1,0 +1,191 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<main>
+
+  <!-- Header -->
+  <section class="container">
+    <div class="py-5 my-lg-5">
+      <div class="row">
+        <div class="col-lg-8">
+
+          <p class="text-primary fw-semibold mb-3">
+            @mcherrera
+          </p>
+
+          <h1 class="display-2 fw-bold lh-1 mb-4">
+            Portafolio.
+          </h1>
+
+          <p class="fs-4 text-body-secondary lh-base mb-0"
+             style="max-width: 650px;">
+            Una selección de proyectos y trabajos en los que he estado
+            involucrado.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Projects -->
+  <section class="container pb-5">
+
+    <div class="row g-4">
+
+      <!-- Proyecto 01 -->
+      <div class="col-12">
+        <div class="card border-0 bg-body-tertiary rounded-4 overflow-hidden">
+          <div class="row g-0 align-items-center">
+
+            <div class="col-lg-7">
+              <div class="p-4 p-lg-5">
+
+                <small class="text-body-secondary">
+                  01
+                </small>
+
+                <h2 class="display-6 fw-bold mt-3 mb-3">
+                  Proyecto principal
+                </h2>
+
+                <p class="text-body-secondary fs-5 mb-4">
+                  Descripción breve del proyecto. Explica qué problema
+                  resuelve, qué hiciste y cuál fue el resultado.
+                </p>
+
+                <div class="d-flex gap-2 flex-wrap mb-4">
+                  <span class="badge text-bg-dark">Python</span>
+                  <span class="badge text-bg-dark">Flask</span>
+                  <span class="badge text-bg-dark">Bootstrap</span>
+                </div>
+
+                <a href="#" class="btn btn-primary">
+                  Ver proyecto →
+                </a>
+
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="bg-secondary-subtle d-flex align-items-center
+                          justify-content-center"
+                   style="min-height: 300px;">
+
+                <span class="text-body-secondary">
+                  Imagen del proyecto
+                </span>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Proyecto 02 -->
+      <div class="col-md-6">
+        <div class="card border-0 bg-body-tertiary rounded-4 h-100">
+
+          <div class="p-4 p-lg-5">
+
+            <small class="text-body-secondary">
+              02
+            </small>
+
+            <h2 class="h2 fw-bold mt-3 mb-3">
+              Segundo proyecto
+            </h2>
+
+            <p class="text-body-secondary mb-4">
+              Una breve descripción del proyecto y de las tecnologías
+              utilizadas.
+            </p>
+
+            <div class="d-flex gap-2 flex-wrap mb-4">
+              <span class="badge text-bg-dark">HTML</span>
+              <span class="badge text-bg-dark">CSS</span>
+              <span class="badge text-bg-dark">JavaScript</span>
+            </div>
+
+            <a href="#" class="text-decoration-none fw-semibold">
+              Ver proyecto →
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Proyecto 03 -->
+      <div class="col-md-6">
+        <div class="card border-0 bg-body-tertiary rounded-4 h-100">
+
+          <div class="p-4 p-lg-5">
+
+            <small class="text-body-secondary">
+              03
+            </small>
+
+            <h2 class="h2 fw-bold mt-3 mb-3">
+              Tercer proyecto
+            </h2>
+
+            <p class="text-body-secondary mb-4">
+              Una breve descripción del proyecto y de las tecnologías
+              utilizadas.
+            </p>
+
+            <div class="d-flex gap-2 flex-wrap mb-4">
+              <span class="badge text-bg-dark">Python</span>
+              <span class="badge text-bg-dark">API</span>
+              <span class="badge text-bg-dark">SQL</span>
+            </div>
+
+            <a href="#" class="text-decoration-none fw-semibold">
+              Ver proyecto →
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+  <section class="border-top">
+    <div class="container py-5 my-lg-4">
+
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+
+          <p class="text-body-secondary text-uppercase small fw-semibold mb-3">
+            ¿Tienes un proyecto?
+          </p>
+
+          <h2 class="display-6 fw-bold mb-3">
+            Hablemos.
+          </h2>
+
+          <p class="text-body-secondary fs-5 mb-4">
+            Si quieres ponerte en contacto conmigo, puedes escribirme.
+          </p>
+
+          <a href="{% url 'web_contact' %}" class="btn btn-primary btn-lg px-4">
+            Contacto →
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}
