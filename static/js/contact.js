@@ -1,4 +1,3 @@
-console.log("🔥 CONTACT.JS CARGADO");
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
     const button = document.getElementById("submitButton");

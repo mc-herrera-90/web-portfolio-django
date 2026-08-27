@@ -248,16 +248,14 @@
 
 </main>
 
-
+{% endblock %}
+{% block scripts %}
 <!-- Cloudflare Turnstile -->
 <script
   src="https://challenges.cloudflare.com/turnstile/v0/api.js"
   async
   defer
 ></script>
-
-
 <!-- Contact loader -->
 <script src="{% static 'js/contact.js' %}"></script>
-
 {% endblock %}

@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,8 @@
 <body>
     {% include "includes/navbar.html" %}
     {% block content %}Content{% endblock content %}
-
-    <script src="{% static 'js/bootstrap.bundle.min' %}"></script>
+    {% include "includes/footer.html" %}
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <!-- Extras scripts -->
+    {% block scripts %}{% endblock %}
 </html>

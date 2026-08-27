@@ -1,5 +1,7 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container">
+
+    <!-- Link: Logo / Inicio -->
     <a class="navbar-brand" href="{% url 'web_home' %}">
       @mcherrera
     </a>
@@ -17,29 +19,31 @@
     <div class="collapse navbar-collapse" id="navbarText">
 
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- Link: Inicio -->
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'web_home' %}">
+          <a class="nav-link {% if request.resolver_match.url_name == 'web_home' %}active{% endif %}"
+             href="{% url 'web_home' %}">
             Inicio
           </a>
         </li>
 
+        <!-- Link: Portafolio -->
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'web_portfolio' %}">
+          <a class="nav-link {% if request.resolver_match.url_name == 'web_portfolio' %}active{% endif %}"
+             href="{% url 'web_portfolio' %}">
             Portafolio
           </a>
         </li>
 
+        <!-- Link: Contacto -->
         <li class="nav-item">
-          <a class="nav-link" href="/blog">
-            Blog
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'web_contact' %}">
+          <a class="nav-link {% if request.resolver_match.url_name == 'web_contact' %}active{% endif %}"
+             href="{% url 'web_contact' %}">
             Contacto
           </a>
         </li>
+
       </ul>
 
       <form class="d-flex" method="get" action="/search">
